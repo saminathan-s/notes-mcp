@@ -45,12 +45,9 @@ Add the following to your `.vscode/mcp.json` file:
 ```json
 {
   "servers": {
-    "ai-notes": {
-      "url": "http://127.0.0.1:8000/sse"
-    },
     "ai-notes-stdio": {
       "type": "stdio",
-      "command": "/Users/saminathan/Workspace/notes-mcp/.venv/bin/python3",
+      "command": "<<path to Workspace>>/notes-mcp/.venv/bin/python3",
       "args": ["main.py"]
     }
   }
