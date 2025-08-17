@@ -1,0 +1,16 @@
+name: ascii-workflow
+on: push
+jobs:
+  create-ascii-art:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install ascii library
+        run: sudo apt-get install cowsay -y
+      - name: Execute command
+        run: cowsay -f dragon "I am a DRAGON" >> dragon.txt
+      - name: Check output
+        run: grep -i "dragon" dragon.txt
+      - name: Cat Dragon file
+        run: cat dragon.txt
+      - name: List directory
+        run: ls -a
