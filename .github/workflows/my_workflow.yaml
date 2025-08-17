@@ -10,7 +10,7 @@ jobs:
         run: echo "Good evening!!"
       - name: Checkout Repo
         uses: actions/checkout@v5
-      - name: List directory
-        run: ls
-      - name: Read
-        run: cat README.md
+      - name: List and read directory
+        run: |
+          ls
+          cat README.md
