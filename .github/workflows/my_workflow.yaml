@@ -1,0 +1,12 @@
+name: My Workflow
+
+on: push
+
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greetings
+        run: echo "Good evening!!"
+      - name: List directory
+        run: ls
