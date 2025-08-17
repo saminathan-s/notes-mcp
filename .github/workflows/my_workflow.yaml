@@ -13,4 +13,4 @@ jobs:
       - name: List directory
         run: ls
       - name: Read
-        run: cat Readme.md
+        run: cat README.md
