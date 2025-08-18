@@ -8,5 +8,5 @@ jobs:
         run: ls -a
       - name: Execute script
         run: |
-          chamod +x ascii.sh
+          chmod +x ascii.sh
           ./ascii.sh
