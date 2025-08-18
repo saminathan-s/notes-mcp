@@ -4,6 +4,8 @@ jobs:
   create-ascii-art:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v5
       - name: List directory
         run: ls -ltra
       - name: Execute script
